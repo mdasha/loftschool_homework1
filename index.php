@@ -96,10 +96,10 @@ foreach ($cars as $key => $vol) {
 echo "<h2>Задание #7</h2>";
 echo "<h3>Таблица умножения 10*10</h3>";
 echo "<table border=\"1\">";
-for ($i = 0; $i<10; $i++) {
+for ($i = 1; $i<=10; $i++) {
     echo "<tr>";
-    for ($j = 1; $j < 10; $j++) {
-        $multiple = ($i+1)*($j+1);
+    for ($j = 1; $j <= 10; $j++) {
+        $multiple = $i*$j;
         $mod_i = $i % 2;
         $mod_j = $j % 2;
         if ($mod_i==0 and  $mod_j==0) {
